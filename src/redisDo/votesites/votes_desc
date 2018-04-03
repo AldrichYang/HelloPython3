@@ -1,0 +1,28 @@
+每篇文章：(hash) 标题，网址，发布用户，发布时间, 得到的投票数量
+article:92617 hash
+    title   Go to statement
+    link    http://goo.
+    poster  user:924
+    time    13434.22
+    votes   529
+
+文章发布时间集合:(zset)
+time:   zset
+    article:10043   2384032840
+    article:14343   43434
+
+文章分值集合:(zset)
+score:  zset
+    article:10043   34343
+    article:14343   2343
+
+每篇文章已投票用户名单:(set)
+voted:100408    set
+    user:34343
+    user:34343
+
+每一篇文章发布期满一周之后，用户不能再进行投票，评分将被固定，记录文章已投票用户的集合也会被删除
+
+
+
+
