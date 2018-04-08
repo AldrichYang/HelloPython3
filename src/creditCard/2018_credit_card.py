@@ -12,4 +12,8 @@ pf = 1596
 zs = 4353
 pay02 = pc.need_to_pay('2018.02', my, pf, zs)
 
-
+# 2018.03
+my = 1379.01
+pf = 581.11
+zs = 0
+pay03 = pc.need_to_pay('2018.03', my, pf, zs)
