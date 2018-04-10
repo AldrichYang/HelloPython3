@@ -14,7 +14,7 @@ def cost_time(book_dict, metrics=10):
     """
     计算每一本书籍的阅读小时数
     :param book_dict:书籍字典
-    :param metrics:每30分钟读书页数
+    :param metrics:每30分钟读书页数.中文默认10页，英文默认6页
     :return:
     """
     total_hours = 0

@@ -17,7 +17,17 @@ def add_it_books():
     return books
 
 
+def add_it_en_books():
+    """
+    网络教程：每一章当做中文30分钟的页数
+    英文书籍：每一页乘以2，当做中文页数
+    """
+    en_books = dict()
+    en_books['Java IO'] = 17 * 10
+    en_books['Java Network'] = 22 * 10
+    return en_books
+
+
 cost_hours = est.cost_time(add_it_books())
+cost_hours += est.cost_time(add_it_en_books())
 est.cost_days(cost_hours)
-
-
