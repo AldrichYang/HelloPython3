@@ -10,8 +10,9 @@ def add_recently_books():
     books = dict()
     books['Redis实战'] = 270
     books['Zookeeper技术详解'] = 200
-    # books['聊聊架构'] = 230
-    # books['Http权威指南'] = 518
+    books['SpringCloud实战'] = 417
+    books['聊聊架构'] = 230
+    books['Http权威指南'] = 518
     return books
 
 

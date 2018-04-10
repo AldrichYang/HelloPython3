@@ -21,7 +21,8 @@ def cost_time(book_dict, metrics=10):
     for k, v in book_dict.items():
         each_cost_hours = estimate_hours_by_pages(v, metrics)
         total_hours += each_cost_hours
-        print(" {} estimate reading time is: {} hours".format(k, each_cost_hours))
+        print("《{:<{}}\t》 estimate reading time is: {} hours".format(k, (16 - len(k.encode('GBK')) + len(k)),
+                                                                     each_cost_hours))
     return total_hours
 
 
@@ -32,5 +33,5 @@ def cost_days(hours, week_day_reading_time=1.5):
     :param week_day_reading_time:每天读书小时数
     :return:
     """
-    print(" take {} days when cost {} hours each day ".format(round(hours / week_day_reading_time, 1),
-                                                              week_day_reading_time))
+    print(" All need {} days when cost {} hours each day ".format(round(hours / week_day_reading_time, 1),
+                                                                  week_day_reading_time))
