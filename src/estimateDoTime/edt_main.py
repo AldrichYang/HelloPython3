@@ -25,6 +25,7 @@ def add_it_en_books():
     en_books = dict()
     en_books['Java IO'] = 17 * 10
     en_books['Java Network'] = 22 * 10
+    en_books['Java Servlet'] = 240 * 2
     return en_books
 
 
