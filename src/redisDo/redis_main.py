@@ -2,4 +2,6 @@
 import redis
 
 conn = redis.Redis()
-print(conn.get('hello'))
+print(conn.get('key'))
+
+
