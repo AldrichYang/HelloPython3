@@ -15,3 +15,5 @@ while i < len(ranges):
 
 def one_range(multiple=1000, factor=0):
     return multiple * (factor - 1), multiple * factor
+
+
