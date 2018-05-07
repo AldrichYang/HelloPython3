@@ -1,5 +1,5 @@
 # coding=utf-8
-from estimateDoTime import estimate_time as est
+from mine.estimateDoTime import estimate_time as est
 
 
 def add_it_books():
