@@ -14,6 +14,7 @@ def add_it_books():
     books['聊聊架构'] = 230
     # books['Http权威指南'] = 518
     books['高性能Mysql'] = 800
+    books['Netty权威指南'] = 526
     return books
 
 
@@ -23,10 +24,18 @@ def add_it_en_books():
     英文书籍：每一页乘以2，当做中文页数
     """
     en_books = dict()
-    en_books['Java IO'] = 17 * 10
-    en_books['Java Network'] = 22 * 10
+    # en_books['Java IO'] = 17 * 10
+    # en_books['Java Network'] = 22 * 10
     en_books['Java Servlet'] = 240 * 2
     return en_books
+
+
+def add_finished_readings():
+    finished_readings = [
+        'Java IO',
+        'Java Network'
+    ]
+    return finished_readings
 
 
 cost_hours = est.cost_time(add_it_books())
