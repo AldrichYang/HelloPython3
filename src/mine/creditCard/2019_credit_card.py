@@ -1,4 +1,5 @@
-from mine.creditCard import pay_computes as pc
+# from mine.creditCard import pay_computes as pc
+from src.mine.creditCard import pay_computes as pc
 
 # 2019.01
 my = 1384.42
@@ -21,6 +22,13 @@ zs = 1652.48
 pf = 540
 pay03 = pc.need_to_pay('2019.03', my, pf, zs, ms)
 
-sum_pay = [pay01, pay02, pay03]
+# 2019.04
+ms = 0
+my = 1848.79
+zs = 135.03
+pf = 378
+pay04 = pc.need_to_pay('2019.04', my, pf, zs, ms)
+
+sum_pay = [pay01, pay02, pay03,pay04]
 
 print(round(sum(sum_pay), 2))
