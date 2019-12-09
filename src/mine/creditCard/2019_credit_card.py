@@ -71,7 +71,13 @@ zs = 964.35
 pf = 1179.35
 pay10 = pc.need_to_pay('2019.10', my, pf, zs, ms)
 
+# 2019.11
+ms = 98.40
+my = 1868.8
+zs = 1156.6
+pf = 1223
+pay11 = pc.need_to_pay('2019.11', my, pf, zs, ms)
 
-sum_pay = [pay01, pay02, pay03, pay04, pay05, pay06, pay07, pay08, pay09, pay10]
+sum_pay = [pay01, pay02, pay03, pay04, pay05, pay06, pay07, pay08, pay09, pay10,pay11]
 
 print(round(sum(sum_pay), 2))
