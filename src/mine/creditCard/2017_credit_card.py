@@ -1,4 +1,4 @@
-from mine.creditCard import pay_computes as pc
+from src.mine.creditCard import pay_computes as pc
 
 # 2016.12
 my = 3901.5
