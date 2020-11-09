@@ -1,3 +1,4 @@
+import re
 yh = ' yang heng learn python '
 print(yh.upper())
 print(yh.lower())
@@ -13,3 +14,8 @@ text = ("%d little pigs come out or I'll %s and %s and %s" %
 # text = {"%d little pigs come out or I'll %s and %s and %s" %
 #         (3, 'huff', 'puff', 'blow down')}
 print(text)
+
+uri = '/api/reserveAmount/get?userId=37350294'
+print(uri.split('?'))
+# print(uri.replace('?',''))
+print(re.sub(r"(\?.*)",'',uri))
