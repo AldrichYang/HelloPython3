@@ -18,9 +18,8 @@ def calc_stock_new_cost(add_buy_amount,add_buy_unit_cost):
     value_diff_cost = new_stock_value-new_stock_cost
     stock_rate = value_diff_cost/new_stock_cost*100
 
-    print("补仓买入成本: %.2f" % (buy_stock_cost))
-    print("补仓后新市值: %.2f,总买入成本: %.2f, 新成本单价: %.2f,新涨跌幅: %.2f,新盈亏额: %.2f " % 
-    (new_stock_value, new_stock_cost, new_stock_unit_cost,stock_rate,value_diff_cost))
+    print("本次补仓买入成本: %.2f, 总买入成本: %.2f, 新成本单价: %.2f" % (buy_stock_cost,new_stock_cost, new_stock_unit_cost))
+    print("新市值: %.2f, 新涨跌幅: %.2f, 新盈亏额: %.2f " % (new_stock_value, stock_rate, value_diff_cost))
 
 # 2021.07.28 预计算补仓后成本价
-calc_stock_new_cost(2600,53.3)
+calc_stock_new_cost(2000,53.3)
