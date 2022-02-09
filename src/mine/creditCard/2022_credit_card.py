@@ -3,8 +3,8 @@ from src.mine.creditCard import pay_computes as pc
 
 # 2022.01
 my = 0
-pf = 0
-zs = 0
+pf = 2653.99
+zs = 5340.6
 ms = 0
 pay01 = pc.need_to_pay('2022.01', my, pf, zs, ms)
 
