@@ -9,7 +9,7 @@ def calc_budget_diff(yearmonth, budget, income, balance=0):
 budget_regular_month = 25000 + 5500 + 3000 + 2000 + 1000
 
 # 2023.01
-income01 = 0
+income01 = 31527
 buget_diff_01 = calc_budget_diff("202301", budget_regular_month, income01)
 
 # 2023.02
