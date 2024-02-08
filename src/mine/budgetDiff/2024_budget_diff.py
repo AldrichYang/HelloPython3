@@ -10,7 +10,7 @@ budget_regular_month = 20000 + 3000 + 1000 + 1000 + 3000 + 2000 + 1000 + 5500
 print("2024年月度预算项目总金额：",budget_regular_month)
 
 # 2024.01
-income01 = 0
+income01 = 37317.62
 buget_diff_01 = calc_budget_diff("202401", budget_regular_month, income01)
 
 # 2024.02
