@@ -57,6 +57,9 @@ buget_diff_11 = calc_budget_diff("202311", budget_regular_month, income11)
 income12 = 32228.26
 buget_diff_12 = calc_budget_diff("202312", budget_regular_month, income12)
 
+sum_income = [income01, income02, income03, income04, income05, income06, income07, income08, income09, income10, income11, income12]
+print('total income of 2023 is:', round(sum(sum_income), 2))
+
 sum_budget_diff = [buget_diff_01, buget_diff_02, buget_diff_03, buget_diff_04, buget_diff_05,
                    buget_diff_06, buget_diff_07, buget_diff_08, buget_diff_09, buget_diff_10, buget_diff_11, buget_diff_12]
 

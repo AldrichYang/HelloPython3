@@ -5,21 +5,24 @@ def calc_budget_diff(yearmonth, budget, income, balance=0):
     print(yearmonth + ' budget amonut difference is : ', format(budget_diff_money, '0.2f'))
     return budget_diff_money
 
-# 2024每月定额预算金额: 房贷20000 + 长投3000 + 房租1000 + 保险1000 + 孩子3000 + 家人2000 + 父母1000 + 消费5500
-budget_regular_month = 20000 + 3000 + 1000 + 1000 + 3000 + 2000 + 1000 + 5500
+# 2024每月定额预算金额: 房贷 (20000 + 4000) + 长投3000 + 房租1000 + 保险1000 + 孩子3000 + 家人2000 + 父母1000 + 消费5500
+budget_regular_month_before4 = 20000 + 3000 + 1000 + 1000 + 3000 + 2000 + 1000 + 5500
+print("2024年月度预算项目总金额before 4月：",budget_regular_month_before4)
+
+budget_regular_month = 20000 + 4000 + 3000 + 1000 + 1000 + 3000 + 2000 + 1000 + 5500
 print("2024年月度预算项目总金额：",budget_regular_month)
 
 # 2024.01
 income01 = 37317.62
-buget_diff_01 = calc_budget_diff("202401", budget_regular_month, income01)
+buget_diff_01 = calc_budget_diff("202401", budget_regular_month_before4, income01)
 
 # 2024.02
 income02 = 38990.21
-buget_diff_02 = calc_budget_diff("202402", budget_regular_month, income02)
+buget_diff_02 = calc_budget_diff("202402", budget_regular_month_before4, income02)
 
 # 2024.03
 income03 = 37091.91
-buget_diff_03 = calc_budget_diff("202403", budget_regular_month, income03)
+buget_diff_03 = calc_budget_diff("202403", budget_regular_month_before4, income03)
 
 # 2024.04
 income04 = 0
@@ -56,6 +59,9 @@ buget_diff_11 = calc_budget_diff("202411", budget_regular_month, income11)
 # 2024.12
 income12 = 0
 buget_diff_12 = calc_budget_diff("202412", budget_regular_month, income12)
+
+sum_income = [income01, income02, income03, income04, income05, income06, income07, income08, income09, income10, income11, income12]
+print('total income of 2024 is:', round(sum(sum_income), 2))
 
 sum_budget_diff = [buget_diff_01, buget_diff_02, buget_diff_03, buget_diff_04, buget_diff_05,
                    buget_diff_06, buget_diff_07, buget_diff_08, buget_diff_09, buget_diff_10, buget_diff_11, buget_diff_12]
