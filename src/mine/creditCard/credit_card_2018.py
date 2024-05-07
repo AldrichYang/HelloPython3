@@ -81,6 +81,7 @@ ms = 0
 my = 1595.40
 pay12 = pc.need_to_pay('2018.12', my, pf, zs, ms)
 
-sum_pay = [pay01, pay02, pay03, pay04, pay05, pay06, pay07, pay08, pay09, pay10, pay11, pay12]
+cc_18_sum = sum([pay01, pay02, pay03, pay04, pay05, pay06, pay07, pay08, pay09, pay10, pay11, pay12])
 
-print(round(sum(sum_pay), 2))
+
+print('2018.all ' + format(cc_18_sum,'0.2f'))

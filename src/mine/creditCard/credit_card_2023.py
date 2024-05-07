@@ -87,11 +87,10 @@ pf = 3859.42
 pay12 = pc.need_to_pay('2023.12', my, pf, zs, ms)
 
 
-sum_pay = [pay01, pay02, pay03, pay04, pay05,
-           pay06, pay07, pay08, pay09, pay10, pay11, pay12]
+cc_23_sum = sum([pay01, pay02, pay03, pay04, pay05, pay06, pay07, pay08, pay09, pay10, pay11, pay12])
 
-print('total credit cost of 2023 is:',round(sum(sum_pay), 2))
 
+print('2023.all ' + format(cc_23_sum,'0.2f'))
 
 
 

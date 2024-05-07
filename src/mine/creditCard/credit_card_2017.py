@@ -1,11 +1,5 @@
 from src.mine.creditCard import pay_computes as pc
 
-# 2016.12
-my = 3901.5
-pf = 1204.0
-zs = 4845.63
-pc.need_to_pay('2016.12', my, pf, zs)
-
 # 2017.01
 my = 1759.61
 zs = 7918.85
@@ -79,5 +73,9 @@ zs = 1198
 ms = 300
 pay12 = pc.need_to_pay('2017.12', my, pf, zs, ms)
 
-print('2017.all ' + format(sum([pay01, pay02, pay03, pay04, pay05, pay06, pay07, pay08, pay09, pay10, pay11, pay12]),
-                           '0.2f'))
+cc_17_sum = sum([pay01, pay02, pay03, pay04, pay05, pay06, pay07, pay08, pay09, pay10, pay11, pay12])
+
+
+print('2017.all ' + format(cc_17_sum,'0.2f'))
+
+
