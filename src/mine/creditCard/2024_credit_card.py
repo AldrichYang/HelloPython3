@@ -17,8 +17,8 @@ pf = 2330.10
 pay03 = pc.need_to_pay('2024.03',  pf, zs, )
 
 # 2024.04
-zs = 0
-pf = 0
+zs = 2900.56
+pf = 2932.3
 pay04 = pc.need_to_pay('2024.04',  pf, zs, )
 
 # 2024.05
