@@ -6,6 +6,7 @@ def calc_budget_diff(yearmonth, budget, income, balance=0):
     return budget_diff_money
 
 # 2024每月定额预算金额: 房贷 (20000 + 4000) + 长投3000 + 房租1000 + 保险1000 + 孩子3000 + 家人2000 + 父母1000 + 消费5500
+
 budget_regular_month_before4 = 20000 + 3000 + 1000 + 1000 + 3000 + 2000 + 1000 + 5500
 print("2024年月度预算项目总金额before 4月：",budget_regular_month_before4)
 
@@ -25,7 +26,7 @@ income03 = 37091.91
 buget_diff_03 = calc_budget_diff("202403", budget_regular_month_before4, income03)
 
 # 2024.04
-income04 = 0
+income04 = 40637.92
 buget_diff_04 = calc_budget_diff("202404", budget_regular_month, income04)
 
 # 2024.05
