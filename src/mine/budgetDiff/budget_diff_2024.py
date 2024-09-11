@@ -42,7 +42,7 @@ income07 = 37028.23
 buget_diff_07 = calc_budget_diff("202407", budget_regular_month, income07)
 
 # 2024.08
-income08 = 0
+income08 = 36938.63
 buget_diff_08 = calc_budget_diff("202408", budget_regular_month, income08)
 
 # 2024.09
@@ -67,4 +67,4 @@ print('total income of 2024 is:', round(sum(sum_income), 2))
 sum_budget_diff = [buget_diff_01, buget_diff_02, buget_diff_03, buget_diff_04, buget_diff_05,
                    buget_diff_06, buget_diff_07, buget_diff_08, buget_diff_09, buget_diff_10, buget_diff_11, buget_diff_12]
 
-print('total budget amount difference of 2024 is:', round(sum(sum_budget_diff), 2))
+print('total budget diff amount of 2024 is:', round(sum(sum_budget_diff), 2))
