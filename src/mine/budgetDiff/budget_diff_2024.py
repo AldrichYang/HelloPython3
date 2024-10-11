@@ -10,7 +10,7 @@ def calc_budget_diff(yearmonth, budget, income, balance=0):
 budget_regular_month_before4 = 20000 + 3000 + 1000 + 1000 + 3000 + 2000 + 1000 + 5500
 print("2024年月度预算项目总金额before 4月：",budget_regular_month_before4)
 
-budget_regular_month = 20000 + 4000 + 3000 + 1000 + 1000 + 3000 + 2000 + 1000 + 5500
+budget_regular_month = 24000 + 3000 + 1000 + 1000 + 3000 + 2000 + 1000 + 5500
 print("2024年月度预算项目总金额：",budget_regular_month)
 
 # 2024.01
@@ -63,6 +63,10 @@ buget_diff_12 = calc_budget_diff("202412", budget_regular_month, income12)
 
 sum_income = [income01, income02, income03, income04, income05, income06, income07, income08, income09, income10, income11, income12]
 print('total income of 2024 is:', round(sum(sum_income), 2))
+
+#计算月平均收入
+avg_income = round(sum(sum_income) / len(sum_income), 2)
+print('average income of 2024 is:', avg_income)
 
 sum_budget_diff = [buget_diff_01, buget_diff_02, buget_diff_03, buget_diff_04, buget_diff_05,
                    buget_diff_06, buget_diff_07, buget_diff_08, buget_diff_09, buget_diff_10, buget_diff_11, buget_diff_12]
