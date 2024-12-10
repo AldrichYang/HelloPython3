@@ -54,7 +54,7 @@ income10 = 33889.46
 buget_diff_10 = calc_budget_diff("202410", budget_regular_month, income10)
 
 # 2024.11
-income11 = 0
+income11 = 35806.72
 buget_diff_11 = calc_budget_diff("202411", budget_regular_month, income11)
 
 # 2024.12
